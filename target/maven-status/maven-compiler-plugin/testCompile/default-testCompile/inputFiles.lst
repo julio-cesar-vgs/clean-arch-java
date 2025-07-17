@@ -1,0 +1,5 @@
+/home/user/clean-arch-java/src/test/java/br/com/alura/codechella/CodechellaApplicationTests.java
+/home/user/clean-arch-java/src/test/java/br/com/alura/codechella/application/usecase/ListarUsuariosTest.java
+/home/user/clean-arch-java/src/test/java/br/com/alura/codechella/domain/UsuarioEntityTest.java
+/home/user/clean-arch-java/src/test/java/br/com/alura/codechella/infra/gateway/RepositorioUsuarioJpaTest.java
+/home/user/clean-arch-java/src/test/java/br/com/alura/codechella/application/usecase/CriarUsuarioTest.java

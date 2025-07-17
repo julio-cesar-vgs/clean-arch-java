@@ -1,0 +1,15 @@
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/controller/UsuarioController.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/domain/FabricaUsuario.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/config/UsuarioConfig.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/persistence/UsuarioEntity.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/controller/dto/UsuarioDto.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/application/usecase/CriarUsuario.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/controller/dto/UsuarioDtoMapper.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/CodechellaApplication.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/gateway/UsuarioMapper.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/application/gateway/RepositorioUsuario.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/domain/Endereco.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/persistence/UsuarioRepository.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/infra/gateway/RepositorioUsuarioJpa.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/domain/Usuario.java
+/home/user/clean-arch-java/src/main/java/br/com/alura/codechella/application/usecase/ListarUsuarios.java

@@ -1,0 +1,15 @@
+br/com/alura/codechella/CodechellaApplication.class
+br/com/alura/codechella/config/UsuarioConfig.class
+br/com/alura/codechella/infra/controller/dto/UsuarioDto.class
+br/com/alura/codechella/domain/Endereco.class
+br/com/alura/codechella/infra/controller/UsuarioController.class
+br/com/alura/codechella/infra/gateway/UsuarioMapper.class
+br/com/alura/codechella/infra/persistence/UsuarioRepository.class
+br/com/alura/codechella/infra/persistence/UsuarioEntity.class
+br/com/alura/codechella/infra/controller/dto/UsuarioDtoMapper.class
+br/com/alura/codechella/domain/FabricaUsuario.class
+br/com/alura/codechella/domain/Usuario.class
+br/com/alura/codechella/infra/gateway/RepositorioUsuarioJpa.class
+br/com/alura/codechella/application/usecase/CriarUsuario.class
+br/com/alura/codechella/application/usecase/ListarUsuarios.class
+br/com/alura/codechella/application/gateway/RepositorioUsuario.class
