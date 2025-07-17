@@ -29,42 +29,42 @@ class CriarUsuarioTest {
 
     @Test
     void shouldCreateUserWithValidData() {
-        Endereco endereco = new Endereco("123", 10, "Complemento", "Bairro", "Cidade", "Estado");
+        Endereco endereco = new Endereco("123", 10, "Complemento");
         Usuario usuario = new Usuario("123.456.789-00", "Fulano de Tal", LocalDate.of(2000, 1, 1), "email@example.com", endereco);
 
-        when(repositorioUsuario.cadastrar(usuario)).thenReturn(usuario);
+        when(repositorioUsuario.cadastrarUsuario(usuario)).thenReturn(usuario);
 
         Usuario createdUser = criarUsuario.cadastrarUsuario(usuario);
 
         assertNotNull(createdUser);
-        assertEquals("Fulano de Tal", createdUser.getNome());
-        verify(repositorioUsuario, times(1)).cadastrar(usuario);
+        assertEquals("Fulano de Tal", createdUser.nome());
+        verify(repositorioUsuario, times(1)).cadastrarUsuario(usuario);
     }
 
     @Test
     void shouldThrowExceptionWhenCreatingUserWithInvalidCpf() {
-        Endereco endereco = new Endereco("123", 10, "Complemento", "Bairro", "Cidade", "Estado");
+        Endereco endereco = new Endereco("123", 10, "Complemento");
         Usuario usuario = new Usuario("invalid-cpf", "Fulano de Tal", LocalDate.of(2000, 1, 1), "email@example.com", endereco);
 
         assertThrows(IllegalArgumentException.class, () -> criarUsuario.cadastrarUsuario(usuario));
-        verify(repositorioUsuario, never()).cadastrar(usuario);
+        verify(repositorioUsuario, never()).cadastrarUsuario(usuario);
     }
 
     @Test
     void shouldThrowExceptionWhenCreatingUserWithNullName() {
-        Endereco endereco = new Endereco("123", 10, "Complemento", "Bairro", "Cidade", "Estado");
+        Endereco endereco = new Endereco("123", 10, "Complemento");
         Usuario usuario = new Usuario("123.456.789-00", null, LocalDate.of(2000, 1, 1), "email@example.com", endereco);
 
         assertThrows(IllegalArgumentException.class, () -> criarUsuario.cadastrarUsuario(usuario));
-        verify(repositorioUsuario, never()).cadastrar(usuario);
+        verify(repositorioUsuario, never()).cadastrarUsuario(usuario);
     }
 
     @Test
     void shouldThrowExceptionWhenCreatingUserWithBirthDateInTheFuture() {
-        Endereco endereco = new Endereco("123", 10, "Complemento", "Bairro", "Cidade", "Estado");
+        Endereco endereco = new Endereco("123", 10, "Complemento");
         Usuario usuario = new Usuario("123.456.789-00", "Fulano de Tal", LocalDate.now().plusDays(1), "email@example.com", endereco);
 
         assertThrows(IllegalArgumentException.class, () -> criarUsuario.cadastrarUsuario(usuario));
-        verify(repositorioUsuario, never()).cadastrar(usuario);
+        verify(repositorioUsuario, never()).cadastrarUsuario(usuario);
     }
 }

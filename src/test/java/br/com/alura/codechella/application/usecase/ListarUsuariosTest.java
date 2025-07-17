@@ -38,7 +38,7 @@ public class ListarUsuariosTest {
     void testRetorna10UsuariosQuandoHa10UsuariosCadastrados() {
         List<Usuario> usuariosMock = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            usuariosMock.add(new Usuario("Usuario " + i, LocalDate.of(2000, 1, 1), "usuario" + i + "@example.com"));
+            usuariosMock.add(new Usuario("Usuario " + i, "usuario" + i,LocalDate.of(2000, 1, 1), "usuario" + i + "@example.com", null));
         }
         when(repositorioUsuario.listarTodos()).thenReturn(usuariosMock);
         List<Usuario> usuarios = listarUsuarios.listarTodos();
